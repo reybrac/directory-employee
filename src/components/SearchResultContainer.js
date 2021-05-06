@@ -11,10 +11,10 @@ class SearchResultContainer extends Component {
 
   // When this component mounts, search the Giphy API for pictures of kittens
   componentDidMount() {
-    this.searchGiphy("female");
+    this.searchEmployee("");
   }
 
-  searchGiphy = (query) => {
+  searchEmployee = (query) => {
     API.search(query)
       .then((res) => {
         this.setState({ results: res.data.results });
@@ -34,7 +34,7 @@ class SearchResultContainer extends Component {
   // When the form is submitted, search the Giphy API for `this.state.search`
   handleFormSubmit = (event) => {
     event.preventDefault();
-    this.searchGiphy(this.state.search);
+    this.searchEmployee(this.state.search);
   };
 
   render() {
