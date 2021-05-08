@@ -2,9 +2,9 @@ import React from "react";
 
 function ResultList(props) {
   return (
-    <table class="table table-hover">
+    <table className="table table-hover">
       <caption>List of employees</caption>
-      <thead class="thead-dark">
+      <thead className="thead-dark">
         <tr>
           <th>Profile picture</th>
           <th>First Name</th>
@@ -12,12 +12,15 @@ function ResultList(props) {
           <th>Age</th>
           <th>email</th>
           <th>State</th>
-          <th>Country</th>
+
+          <th>
+            <button onClick={props.sortByCountry}>Country</button>
+          </th>
         </tr>
       </thead>
       <tbody>
         {props.results.map((result) => (
-          <tr>
+          <tr key={result.login.uuid}>
             <td>
               <img alt={result.name.first} src={result.picture.medium}></img>
             </td>

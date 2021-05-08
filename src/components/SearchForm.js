@@ -20,6 +20,9 @@ function SearchForm(props) {
         >
           Search
         </button>
+        <button onClick={props.clear} className="btn btn-secondary mt-3">
+          Clear
+        </button>
       </div>
     </form>
   );
