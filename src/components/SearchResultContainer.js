@@ -44,6 +44,15 @@ class SearchResultContainer extends Component {
           .includes(this.state.search.toLowerCase()) ||
         `${employee.name.first} ${employee.name.last}`
           .toLocaleLowerCase()
+          .includes(this.state.search.toLowerCase()) ||
+        employee.email
+          .toLowerCase()
+          .includes(this.state.search.toLowerCase()) ||
+        employee.location.state
+          .toLowerCase()
+          .includes(this.state.search.toLowerCase()) ||
+        employee.location.country
+          .toLowerCase()
           .includes(this.state.search.toLowerCase())
       );
     });

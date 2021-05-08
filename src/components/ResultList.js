@@ -14,7 +14,10 @@ function ResultList(props) {
           <th>State</th>
 
           <th>
-            <button onClick={props.sortByCountry}>Country</button>
+            Country
+            <button className="btn btn-dark" onClick={props.sortByCountry}>
+              <i className="fas fa-sort"></i>
+            </button>
           </th>
         </tr>
       </thead>
