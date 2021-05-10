@@ -20,15 +20,15 @@ An employee directory for a user to see all employees in order to quickly access
 
 Click on the link to the deployed site.
 
-https://reybrac-budget-tracker.herokuapp.com/
+https://reybrac.github.io/directory-employee/
 
 ## Usage information:
 
 An employee or manager can view non-sensitive data about other employees. They can filter the employees by name by searching by first name, last name, or both. They can also filter the by searching email address, state, or country. The person can also sort employees by Country.
 
 Screenshots of working website:
-![screenshot of working application](https://github.com/reybrac/Budget-tracker/blob/main/public/icons/Budget-tracker.JPG?raw=true)
-![screenshot of working application](https://github.com/reybrac/Tech-blog/blob/main/public/images/TechBlog2.JPG?raw=true)
+![screenshot of working application](https://github.com/reybrac/directory-employee/blob/main/public/images/employee-dir.jpg?raw=true)
+![screenshot of working application](https://github.com/reybrac/directory-employee/blob/main/public/images/employe-directory.gif?raw=true)
 
 ## Contribution guidelines:
 
